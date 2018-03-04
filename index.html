@@ -1,103 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
     <header class="main-header">
-      <nav class="main-header_page-nav">
-        <a href="#" class="page-nav_link">Информация</a>
-        <a href="#" class="page-nav_link">Новости</a>
-        <a href="#" class="page-nav_link">Прайс</a>
-        <a href="#" class="page-nav_link">Магазин</a>
-        <a href="#" class="page-nav_link">Контакты</a>
-      </nav>
-      <div class="main-header_auth">
-        <button class="auth_btn-modal">Вход</button>
-      </div>
+        <nav class="main-header_page-nav">
+            <a href="#" class="page-nav_link">Информация</a>
+            <a href="#" class="page-nav_link">Новости</a>
+            <a href="#" class="page-nav_link">Прайс</a>
+            <a href="#" class="page-nav_link">Магазин</a>
+            <a href="#" class="page-nav_link">Контакты</a>
+        </nav>
+        <div class="main-header_auth">
+            <button class="auth_btn-modal">Вход</button>
+        </div>
     </header>
     <main class="main-content">
-      <div class="main-content_logo"><img src="" alt="барбершоп"
-        class="logo_img"></div>
-      <section class="main-content_features">
-        <div class="features_content">
-          <h3 class="features_title"></h3>
-          <p class="features_text"></p>
+        <div class="main-content_logo">
+            <img src="img/logo.png" alt="Логотип барбершоп Бородинский" class="logo_img">
         </div>
-        <div class="features_content">
-          <h3 class="features_title"></h3>
-          <p class="features_text"></p>
-        </div>
-        <div class="features_content">
-          <h3 class="features_title"></h3>
-          <p class="features_text"></p>
-        </div>
-      </section>
-      <section class="main-content_blog">
-        <div class="blog_news">
-          <h3 class="news_title"></h3>
-          <article class="news_item">
-            <p class="item_text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР!
-              ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ.</p>
-            <time class="item_date"></time>
-          </article>
-          <article class="news_item">
-            <p class="item_text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР!
-              ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ.</p>
-            <time class="item_date"></time>
-          </article>
-          <button class="btn"></button>
-        </div>
-        <div class="blog_gallery">
-          <h3 class="gallery_title"></h3>
-          <img src="" alt="" class="gallery_img">
-          <div class="gallery_action">
-            <button class="btn btn--disabled"></button>
-            <button class="btn"></button>
-          </div>
-        </div>
-      </section>
-      <section class="main-container_contacts">
-        <div class="contacts_info">
-          <h3 class="info_title"></h3>
-          <div class="info_addinfo">
-            <span class="info_name"></span>
-            <address class="info_address"></address>
-            <tel class="info_tel"></tel>
-          </div>
-          <div class="info_time">
-            span.time_label+span+
-          </div>
-          <div class="info_action">
-            <button class="btn"></button>
-            <button class="btn"></button>
-          </div>
-        </div>
-        <div class="contacts_booking">
-          <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button type='submit'></button>
-          </form>
-        </div>
-      </section>
+        <section class="main-content_features">
+            <div class="features_content">
+                <h3 class="features_title">Быстро</h3>
+                <p class="features_text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+            </div>
+            <div class="features_content">
+                <h3 class="features_title">Круто</h3>
+                <p class="features_text">Забудьте, как вы стриглись раньше.</p>
+                <p class="features_text">Мы сделаем из вас звезду футбола или кино!</p>
+                <p class="features_text">Во всяком случае внешне.</p>
+            </div>
+            <div class="features_content">
+                <h3 class="features_title">Дорого</h3>
+                <p class="features_text">Наши мастера- профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+            </div>
+        </section>
+        <section class="main-content_blog">
+            <div class="blog_news">
+                <h3 class="news_title" Новости></h3>
+                <article class="news_item">
+                    <p class="item_text">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+                    <time class="item_date">11 января</time>
+                </article>
+                <article class="news_item">
+                    <p class="item_text">В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                    <time class="item_date">18 января</time>
+                </article>
+                <button class="btn">Все новости</button>
+            </div>
+            <div class="blog_gallery">
+                <h3 class="gallery_title">Фотогалерея</h3>
+                <img src="img/interior-1.jpg" alt="Интекрьер барбершопа" class="gallery_img">
+                <div class="gallery_action">
+                    <button class="btn btn--disabled">Назад</button>
+                    <button class="btn">Вперед</button>
+                </div>
+            </div>
+        </section>
+        <section class="main-container_contacts">
+            <div class="contacts_info">
+                <h3 class="info_title">Контактная информация</h3>
+                <div class="info_addinfo">
+                    <span class="info_name">Барбершоп "Бородинский"</span>
+                    <address class="info_address">Адрес: г.Санкт-Петербург</address>
+                    <tel class="info_tel">Телефон: +7 (812)</tel>
+                </div>
+                <div class="info_worktime">
+                    <span class="info_time1">Время работы</span>
+                    <span class="info_time2">Пн-Пт: с 10:00 до 22:00</span>
+                    <span class="info_time3">Сб-Вс: с 10:00 до 19:00</span>
+                </div>
+                <div class="info_action">
+                    <button class="btn">Как проехать</button>
+                    <button class="btn">Обратная связь</button>
+                </div>
+            </div>
+            <div class="contacts_appointment">
+                <h3>Записаться</h3>
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                <form action="">
+                    <input type="datte">
+                    <input type="time">
+                    <input type="text">
+                    <input type="tel">
+                    <button type='submit'>Отправить</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer class="main-footer">
-
+        <div class="main-footer_address">
+            <span class="info_name">Барбершоп "Бородинский"</span>
+            <address class="info_address">Адрес: г.Санкт-Петербург</address>
+            <tel class="info_tel">Телефон: +7 (812)</tel>
+        </div>
     </footer>
     <div class="modal">
-      <div class="overlay"></div>
-      <div class="modal_window">
-        <h3></h3>
-        <span></span>
-        <form action="">
-          <input type="text" id='check'>
-          <lable for='check'></lable>
-        </form>
-      </div>
+        <div class="overlay"></div>
+        <div class="modal_window">
+            <h3>Регистрация</h3>
+            <span></span>
+            <form action="">
+                <input type="text" id='check'>
+                <lable for='check'></lable>
+            </form>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
