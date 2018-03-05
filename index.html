@@ -65,14 +65,12 @@
         <section class="main-container_contacts">
             <div class="contacts_info">
                 <h3 class="info_title">Контактная информация</h3>
-                <div class="info_addinfo">
-                    <span class="info_name">Барбершоп "Бородинский"</span>
-                    <address class="info_address">Адрес: г.Санкт-Петербург</address>
-                    <tel class="info_tel">Телефон: +7 (812)</tel>
-                </div>
+                <span class="info_name">Барбершоп "Бородинский"</span>
+                <address class="info_address">Адрес: г.Санкт-Петербург</address>
+                <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
                 <div class="info_worktime">
-                    <span class="info_time1">Время работы</span>
-                    <span class="info_time2">Пн-Пт: с 10:00 до 22:00</span>
+                    <span class="info_time1">Время работы</span><br>
+                    <span class="info_time2">Пн-Пт: с 10:00 до 22:00</span><br>
                     <span class="info_time3">Сб-Вс: с 10:00 до 19:00</span>
                 </div>
                 <div class="info_action">
@@ -84,23 +82,41 @@
                 <h3>Записаться</h3>
                 <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                 <form action="">
-                    <input type="datte">
-                    <input type="time">
-                    <input type="text">
-                    <input type="tel">
+                    <div class="appointment-timestamp">
+                        <input type="date">
+                        <input type="time">
+                    </div>
+                    <div class="appointment-name">
+                        <input type="text">
+                        <input type="tel">
+                    </div>
                     <button type='submit'>Отправить</button>
                 </form>
             </div>
         </section>
+        <div class="main-content_pre-footer">
+
+        </div>
     </main>
     <footer class="main-footer">
         <div class="main-footer_address">
             <span class="info_name">Барбершоп "Бородинский"</span>
-            <address class="info_address">Адрес: г.Санкт-Петербург</address>
-            <tel class="info_tel">Телефон: +7 (812)</tel>
+            <address class="info_address">Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19.8 </address>
+            <span class="info_question">Как нас найти?</span><br>
+            <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
+        </div>
+        <div class="main-footer_society">
+            <span>Давайте дружить!</span>
+            <div class="society_icons">
+
+            </div>
+        </div>
+        <div class="main-footer_developers">
+            <span>Разработано</span>
+            <button>HTML Academy</button>
         </div>
     </footer>
-    <div class="modal">
+    <div class="modal_register">
         <div class="overlay"></div>
         <div class="modal_window">
             <h3>Регистрация</h3>
@@ -109,6 +125,12 @@
                 <input type="text" id='check'>
                 <lable for='check'></lable>
             </form>
+        </div>
+    </div>
+    <div class="modal_map">
+        <div class="overlay"></div>
+        <div class="map_navigator">
+
         </div>
     </div>
 </body>

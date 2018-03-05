@@ -37,20 +37,50 @@
     background: #ffffff;
     color: #000000;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+}
+
+.blog_news {
+    flex-basis: 50%;
+    margin: 0 auto;
+}
+
+.blog_gallery {
+    flex-basis: 50%;
+    margin: 0 auto;
 }
 
 .main-container_contacts {
+    display: flex;
     width: 50%;
     margin: 0 auto;
     padding: 20px;
     background: #ffffff;
     color: #000000;
-    display: flex;
     margin-bottom: 20px;
 }
 
+.contacts_info {
+    flex-basis: 50%;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.contacts_appointment {
+    flex-basis: 50%;
+}
+
+.info_worktime {
+    margin: 2px;
+}
+
+.main-content_pre-footer {
+    display: block;
+    height: 65px;
+}
+
 .main-footer {
+    display: flex;
     color: #ffffff;
     background: #252525;
 }
