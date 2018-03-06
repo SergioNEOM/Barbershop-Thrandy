@@ -77,12 +77,7 @@
 }
 
 .timestamp_date {
-    flex-basis: 50%;
     margin-bottom: 15px;
-}
-
-.timestamp_time {
-    flex-basis: 50%;
 }
 
 .booking_timestamp span {
@@ -95,23 +90,19 @@
 }
 
 .client_name {
-    flex-basis: 50%;
     margin-bottom: 15px;
-}
-
-.client_phone {
-    flex-basis: 50%;
 }
 
 .booking_client span {
     padding: 15px;
 }
 
-input {
-    width: 120px;
+.booking_input {
+    width: 90%;
     border: 2px solid;
-    margin: 10px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* выравнен влево :( */
 }
 
 .btn-submit {
