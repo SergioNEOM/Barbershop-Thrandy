@@ -66,8 +66,56 @@
     padding-left: 20px;
 }
 
-.contacts_appointment {
+.contacts_booking {
     flex-basis: 50%;
+    padding: 20px;
+}
+
+.booking_timestamp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timestamp_date {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+}
+
+.timestamp_time {
+    flex-basis: 50%;
+}
+
+.booking_timestamp span {
+    padding: 15px;
+}
+
+.booking_client {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client_name {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+}
+
+.client_phone {
+    flex-basis: 50%;
+}
+
+.booking_client span {
+    padding: 15px;
+}
+
+input {
+    width: 120px;
+    border: 2px solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn-submit {
+    width: 100%;
 }
 
 .info_worktime {

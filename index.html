@@ -42,7 +42,7 @@
         </section>
         <section class="main-content_blog">
             <div class="blog_news">
-                <h3 class="news_title" Новости></h3>
+                <h3 class="news_title">Новости</h3>
                 <article class="news_item">
                     <p class="item_text">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
                     <time class="item_date">11 января</time>
@@ -55,7 +55,7 @@
             </div>
             <div class="blog_gallery">
                 <h3 class="gallery_title">Фотогалерея</h3>
-                <img src="img/interior-1.jpg" alt="Интекрьер барбершопа" class="gallery_img">
+                <img src="img/interior-1.jpg" alt="Интерьер барбершопа" class="gallery_img">
                 <div class="gallery_action">
                     <button class="btn btn--disabled">Назад</button>
                     <button class="btn">Вперед</button>
@@ -78,19 +78,31 @@
                     <button class="btn">Обратная связь</button>
                 </div>
             </div>
-            <div class="contacts_appointment">
+            <div class="contacts_booking">
                 <h3>Записаться</h3>
                 <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
                 <form action="">
-                    <div class="appointment-timestamp">
-                        <input type="date">
-                        <input type="time">
+                    <div class="booking_timestamp">
+                        <div class="timestamp_date">
+                            <span>Дата</span><br>
+                            <input type="text" placeholder="08.10.2017" value="" maxlength="10">
+                        </div>
+                        <div class="timestamp_time">
+                            <span>Время</span><br>
+                            <input type="text" placeholder="10:00" value="">
+                        </div>
                     </div>
-                    <div class="appointment-name">
-                        <input type="text">
-                        <input type="tel">
+                    <div class="booking_client">
+                        <div class="client_name">
+                            <span>Ваше имя</span><br>
+                            <input type="text" placeholder="Борода" value="">
+                        </div>
+                        <div class="client_phone">
+                            <span>Телефон</span><br>
+                            <input type="tel" placeholder="+7 123 456-78-90" value="">
+                        </div>
                     </div>
-                    <button type='submit'>Отправить</button>
+                    <button type="submit" class="btn-submit">Отправить</button>
                 </form>
             </div>
         </section>
@@ -105,7 +117,7 @@
             <span class="info_question">Как нас найти?</span><br>
             <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
         </div>
-        <div class="main-footer_society">
+        <div class="main-footer_social">
             <span>Давайте дружить!</span>
             <div class="society_icons">
 
@@ -122,8 +134,8 @@
             <h3>Регистрация</h3>
             <span></span>
             <form action="">
-                <input type="text" id='check'>
-                <lable for='check'></lable>
+                <input type="text" id="check">
+                <lable for="check"></lable>
             </form>
         </div>
     </div>
