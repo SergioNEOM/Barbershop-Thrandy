@@ -9,15 +9,17 @@
 
 <body>
     <header class="main-header">
-        <nav class="main-header_page-nav">
-            <a href="#" class="page-nav_link">Информация</a>
-            <a href="#" class="page-nav_link">Новости</a>
-            <a href="#" class="page-nav_link">Прайс</a>
-            <a href="#" class="page-nav_link">Магазин</a>
-            <a href="#" class="page-nav_link">Контакты</a>
-        </nav>
-        <div class="main-header_auth">
-            <button class="auth_btn-modal">Вход</button>
+        <div class="main-header_center">
+            <nav class="main-header_page-nav">
+                <a class="page-nav_link" href="info.html">Информация</a>
+                <a class="page-nav_link" href="#">Новости</a>
+                <a class="page-nav_link" href="price.html">Прайс</a>
+                <a class="page-nav_link" href="#">Магазин</a>
+                <a class="page-nav_link" href="#">Контакты</a>
+            </nav>
+            <div class="main-header_auth">
+                <button class="auth_btn-modal">Вход</button>
+            </div>
         </div>
     </header>
     <main class="main-content">
@@ -31,9 +33,10 @@
             </div>
             <div class="features_content">
                 <h3 class="features_title">Круто</h3>
-                <p class="features_text">Забудьте, как вы стриглись раньше.</p>
-                <p class="features_text">Мы сделаем из вас звезду футбола или кино!</p>
-                <p class="features_text">Во всяком случае внешне.</p>
+                <p class="features_text">Забудьте, как вы стриглись раньше.
+                    <p>
+                        <p class="features_text">Мы сделаем из вас звезду футбола или кино!</p>
+                        <p class="features_text">Во всяком случае внешне.</p>
             </div>
             <div class="features_content">
                 <h3 class="features_title">Дорого</h3>
@@ -55,7 +58,7 @@
             </div>
             <div class="blog_gallery">
                 <h3 class="gallery_title">Фотогалерея</h3>
-                <img src="img/interior-1.jpg" alt="Интерьер барбершопа" class="gallery_img">
+                <img class="gallery_img" src="img/interior-1.jpg" alt="Интерьер барбершопа">
                 <div class="gallery_action">
                     <button class="btn btn--disabled">Назад</button>
                     <button class="btn">Вперед</button>
@@ -130,7 +133,7 @@
     </footer>
     <div class="modal_register">
         <div class="overlay"></div>
-        <div class="modal_window">
+        <div class="modal_window visually-hidden">
             <h3>Регистрация</h3>
             <span></span>
             <form action="">
@@ -141,7 +144,7 @@
     </div>
     <div class="modal_map">
         <div class="overlay"></div>
-        <div class="map_navigator">
+        <div class="map_navigator visually-hidden">
 
         </div>
     </div>
