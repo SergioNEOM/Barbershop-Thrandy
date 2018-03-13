@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="main-header_center">
+            <nav class="main-header_page-nav">
+                <a class="page-nav_link" href="info.html">Информация</a>
+                <a class="page-nav_link" href="#">Новости</a>
+                <a class="page-nav_link" href="price.html">Прайс-лист</a>
+                <a class="page-nav_link" href="#">Магазин</a>
+                <a class="page-nav_link" href="#">Контакты</a>
+            </nav>
+            <div class="main-header_auth">
+                <button class="auth_btn-modal">Вход</button>
+            </div>
+        </div>
+    </header>
+    <main class="shop-content">
+        <h3 class="content_title">Средства для ухода</h3>
+        <ul class="content_bread-crumbs">
+            <li class="bread-crumbs_item">Главная</li>
+            <li class="bread-crumbs_item">Магазин</li>
+            <li class="bread-crumbs_item">Средства для ухода</li>
+        </ul>
+        <aside class="content_filter">
+            <fieldset class="goods_filter">
+                <legend class="filter_header">Производители:</legend>
+                <label class="filter_label">
+                  <input class="filter_check" type="checkbox" name="baxter" checked>
+                  Baxter of California
+                </label>
+                <label class="filter_label">
+                    <input class="filter_check" type="checkbox" name="natty">
+                    Mr Natty
+                  </label>
+                <label class="filter_label">
+                    <input class="filter_check" type="checkbox" name="suavecito" id="" checked>
+                    Suavecito
+                  </label>
+                <label class="filter_label">
+                  <input class="filter_check" type="checkbox" name="malin">
+                  Malin+Goetz
+                </label>
+                <label class="filter_label">
+                    <input class="filter_check" type="checkbox" name="murray">
+                    Murray's
+                  </label>
+                <label class="filter_label">
+                      <input class="filter_check" type="checkbox" name="crew" checked>
+                      American crew
+                </label>
+            </fieldset>
+            <fieldset class="goods_group">
+                <legend class="group_header">Группы товаров:</legend>
+                <label class="group_label">
+                  <input class="group_radio" type="radio" name="accessories">
+                  Бритвенные принадлежности
+                </label>
+                <label class="group_label">
+                  <input class="group_radio" type="radio" name="accessories" checked>
+                  Средства для ухода
+                  </label>
+                <label class="group_label">
+                    <input class="group_radio" type="radio" name="accessories">
+                    Аксессуары
+                  </label>
+            </fieldset>
+            <button class="btn-set-filter">Показать</button>
+        </aside>
+        <section class="goods-list">
+            <article>
+                <img class="good-item-img" src="img/catalog-content-1.jpg" alt="Набор для путешествий Baxter of California">
+                <p>Набор для путешествий "Baxter of California"</p>
+                <span>2&nbsp;900&#8381</span>
+                <button>Купить</button>
+            </article>
+            <article>
+                <img class="good-item-img" src="img/catalog-content-2.jpg" alt="Увлажняющий кондиционер Baxter of California">
+                <p>Увлажняющий кондиционер "Baxter of California"</p>
+                <span>750&#8381</span>
+                <button>Купить</button>
+            </article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer_address">
+            <span class="info_name">Барбершоп "Бородинский"</span>
+            <address class="info_address">Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19.8 </address>
+            <a class="info_question" href="#">Как нас найти?</a><br>
+            <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
+        </div>
+        <div class="main-footer_social">
+            <span>Давайте дружить!</span>
+            <div class="society_icons">
+
+            </div>
+        </div>
+        <div class="main-footer_developers">
+            <span>Разработано</span>
+            <button>HTML Academy</button>
+        </div>
+    </footer>
+</body>
+
+</html>
