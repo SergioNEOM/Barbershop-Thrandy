@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-header_center">
+        <div class="main-header_content">
             <nav class="main-header_page-nav">
                 <a class="page-nav_link" href="info.html">Информация</a>
                 <a class="page-nav_link" href="#">Новости</a>
@@ -27,16 +30,16 @@
             <img src="img/logo.png" alt="Логотип барбершоп Бородинский" class="logo_img">
         </div>
         <section class="main-content_features">
+            <h2 class="features_header visually-hidden">Преимущества</h2>
             <div class="features_content">
                 <h3 class="features_title">Быстро</h3>
                 <p class="features_text">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
             </div>
             <div class="features_content">
                 <h3 class="features_title">Круто</h3>
-                <p class="features_text">Забудьте, как вы стриглись раньше.
-                    <p>
-                        <p class="features_text">Мы сделаем из вас звезду футбола или кино!</p>
-                        <p class="features_text">Во всяком случае внешне.</p>
+                <p class="features_text">Забудьте, как вы стриглись раньше.</p>
+                <p class="features_text">Мы сделаем из вас звезду футбола или кино!</p>
+                <p class="features_text">Во всяком случае внешне.</p>
             </div>
             <div class="features_content">
                 <h3 class="features_title">Дорого</h3>
@@ -44,6 +47,7 @@
             </div>
         </section>
         <section class="main-content_blog">
+            <h2 class="blog_header visually-hidden">Новости</h2>
             <div class="blog_news">
                 <h3 class="news_title">Новости</h3>
                 <article class="news_item">
@@ -66,11 +70,12 @@
             </div>
         </section>
         <section class="main-container_contacts">
+            <h2 class="contacts_header visually-hidden">Контактная информация</h2>
             <div class="contacts_info">
                 <h3 class="info_title">Контактная информация</h3>
                 <span class="info_name">Барбершоп "Бородинский"</span>
                 <address class="info_address">Адрес: г.Санкт-Петербург</address>
-                <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
+                <span>Телефон:</span><a class="info_phone" href="tel:8121234567"> +7 (812) 123-45-67</a>
                 <div class="info_worktime">
                     <span class="info_time1">Время работы</span><br>
                     <span class="info_time2">Пн-Пт: с 10:00 до 22:00</span><br>
@@ -109,9 +114,6 @@
                 </form>
             </div>
         </section>
-        <div class="main-content_pre-footer">
-
-        </div>
     </main>
     <footer class="main-footer">
         <div class="main-footer_address">
@@ -122,13 +124,17 @@
         </div>
         <div class="main-footer_social">
             <span>Давайте дружить!</span>
-            <div class="society_icons">
-
+            <div class="social_icons">
+                <ul>
+                    <li><a class="icons-facebook" href="#">Facebook</a></li>
+                    <li><a class="icons-facebook" href="#">Facebook</a></li>
+                    <li><a class="icons-facebook" href="#">Facebook</a></li>
+                </ul>
             </div>
         </div>
-        <div class="main-footer_developers">
+        <div class="main-footer_developer">
             <span>Разработано</span>
-            <button>HTML Academy</button>
+            <a class="developer">HTML Academy</a>
         </div>
     </footer>
     <div class="modal_register">

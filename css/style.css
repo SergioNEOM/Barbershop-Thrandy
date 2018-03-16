@@ -9,7 +9,7 @@ body {
     text-transform: uppercase;
 }
 
-.main-header_center {
+.main-header_content {
     display: flex;
     justify-content: space-between;
     width: 50%;
@@ -53,6 +53,7 @@ body {
 
 .main-content {
     background: url(../img/bckgr-index.jpg);
+    padding-bottom: 25px;
 }
 
 .main-content_logo {
@@ -150,7 +151,7 @@ body {
 
 .booking_input {
     width: 90%;
-    border: 2px solid;
+    border: 2px solid #000000;
     padding-top: 10px;
     padding-bottom: 10px;
     /* выравнен влево :( */
@@ -165,12 +166,13 @@ body {
 }
 
 
-/*----------- footer ---------------*/
+/*----------- footer ---------------
 
 .main-content_pre-footer {
     display: block;
     height: 65px;
 }
+*/
 
 .main-footer {
     display: flex;
