@@ -6,47 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: Барбершоп | Price list</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
     <header class="main-header">
-        <div class="main-header_center">
-            <nav class="main-header_page-nav">
-                <a class="page-nav_link" href="index.html">
-                    <img class="link_logo" src="img/logo_min.png" alt="Малый логотип Барбершопа">
-                </a>
-                <a class="page-nav_link" href="info.html">Информация</a>
-                <a class="page-nav_link" href="#">Новости</a>
-                <a class="page-nav_link" href="#">Прайс-лист</a>
-                <a class="page-nav_link" href="shop.html">Магазин</a>
-                <a class="page-nav_link" href="#">Контакты</a>
-            </nav>
+        <nav class="main-header_content price-cover">
+            <ul>
+                <li>
+                    <a class="page-nav_link" href="index.html">
+                        <img class="link_logo" src="img/logo_min.png" alt="Малый логотип Барбершопа">
+                    </a>
+                </li>
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
             <div class="main-header_auth">
-                <button class="auth_btn-modal">Вход</button>
+                <button class="auth_btn">Вход</button>
             </div>
-        </div>
+        </nav>
     </header>
     <main class="price-content">
         <h3 class="content_title">Прайс-лист</h3>
         <ul class="content_breadcrumbs">
-            <li><a class="breadcrumbs_item" href="index.html">Главная</a></li>
-            <li><a class="breadcrumbs_item-disabled" href="#">Прайс-лист</a></li>
+            <li class="breadcrumbs_item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs_item"><img src="img/diamond-divider.png" alt="разделитель ссылок"></li>
+            <li class="breadcrumbs_item-disabled">Прайс-лист</li>
         </ul>
-        <section class="content_tiles">
-            <h2 class="tiles_title">------ Истинно мужская классика ------</h2>
-            <div class="tiles_promotion">
-                <strong class="promotion_header">Мы используем только лучшие средства: </strong>
+        <h2 class="grid_title">Истинно мужская классика</h2>
+        <div class="content_grid">
+            <section class="grid_promotion">
+                <h3>Мы используем только лучшие средства: </h3>
                 <ul>
                     <li class="promotion_item">Baxter of California</li>
                     <li class="promotion_item">Mr Natty</li>
                     <li class="promotion_item">Suavecito</li>
                     <li class="promotion_item">Malin+Goetz</li>
                 </ul>
-            </div>
-            <div class="tiles_prices">
-                <strong class="prices_header">Цены на услуги наших мастеров:</strong>
+            </section>
+            <section class="grid_prices">
+                <h3>Цены на услуги наших мастеров:</h3>
                 <table class="prices_details">
                     <tr>
                         <td>Стрижка</td>
@@ -61,9 +65,11 @@
                         <td>350 &#8381</td>
                     </tr>
                 </table>
-            </div>
-            <div class="tiles_about">
-                <strong class="about_header">Несколько слов о нас:</strong>
+            </section>
+        </div>
+        <section class="grid_about">
+            <h3>Несколько слов о нас:</h3>
+            <div class="about_columns">
                 <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа, мы не работаем на колическтво, мы делаем качество.</p>
                 <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
             </div>
