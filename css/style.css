@@ -28,7 +28,9 @@ address {
 }
 
 .index-width {
-    max-width: 1175px;
+    /* max-width: 1175px; */
+    width: 50%;
+    min-width: 800px;
 }
 
 .main-header {
@@ -42,7 +44,6 @@ address {
 .main-header_content {
     display: flex;
     justify-content: space-between;
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -107,6 +108,7 @@ address {
 .main-content {
     /*background: url(../img/bckgr-index.jpg);*/
     padding-bottom: 25px;
+    margin: 0 auto;
 }
 
 .main-content_logo {
@@ -119,7 +121,6 @@ address {
 
 .main-content_features {
     display: flex;
-    width: 50%;
     margin: 0 auto 32px auto;
     /* color: #ffffff; */
     text-align: center;
@@ -162,7 +163,6 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50%;
     margin: 0 auto;
     margin-bottom: 32px;
     /* font-size: 16px; */
@@ -262,7 +262,6 @@ address {
 
 .main-container_contacts {
     display: flex;
-    width: 50%;
     margin: 0 auto;
     padding: 20px;
     background: #ffffff;
@@ -345,10 +344,9 @@ address {
     background: #212121;
 }
 
-.main-footer_container {
+.footer_wrapper {
     display: flex;
     justify-content: space-between;
-    width: 50%;
     margin: 0 auto;
 }
 
@@ -445,9 +443,7 @@ address {
  */
 
 .price-body {
-    background: url(../img/barbershop-price.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-color: #000000;
 }
 
 .link_logo {
@@ -457,28 +453,29 @@ address {
 
 .price-width {
     width: 75%;
+    min-width: 800px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .price-content {
-    /* background-color: #f8f4f1; */
-    background-color: transparent;
+    background-color: #f8f4f1;
     color: #000000;
-    padding-top: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-top: 65px;
+    padding-bottom: 80px;
 }
 
-.content-title {
-    font-size: 30px;
-    line-height: 30px;
+section h3 {
+    font-size: 24px;
+    line-height: 28px;
     margin-top: 0px;
     margin-bottom: 25px;
     max-width: 50%;
 }
 
-.price-content h3 {
-    font-size: 24px;
-    line-height: 28px;
+.content_title {
+    font-size: 30px;
+    line-height: 30px;
     margin-top: 0px;
     margin-bottom: 25px;
     max-width: 50%;
@@ -489,8 +486,8 @@ address {
 
 .content_breadcrumbs {
     list-style: none;
-    margin: 0px;
     padding: 0px;
+    margin-bottom: 50px;
 }
 
 .breadcrumbs_item,
@@ -537,7 +534,6 @@ address {
     font-size: 49px;
     line-height: 38px;
     padding: 0px;
-    margin-top: 50px;
     margin-bottom: 70px;
 }
 
@@ -597,4 +593,60 @@ address {
 .about_columns p {
     display: block;
     padding-right: 100px;
+}
+
+
+/*
+*
+*
+****** shop *****
+*
+*
+*/
+
+.shop-content {
+    background-color: #f8f4f1;
+    color: #000000;
+    padding-top: 65px;
+    padding-bottom: 80px;
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+.content_filter {
+    width: 20%;
+    min-width: 300px;
+    /* float: left; */
+}
+
+.content_filter fieldset {
+    border: none;
+}
+
+.content_filter legend {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.content_filter ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.list_grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list_grid-wrapper article {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-item_link span {
+    display: block;
 }
