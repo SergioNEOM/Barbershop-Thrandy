@@ -11,6 +11,9 @@ body {
     color: #ffffff;
     /*---*/
     background: #000000;
+}
+
+.index-body {
     background: url(../img/bckgr-index.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -24,18 +27,16 @@ address {
     font: inherit;
 }
 
+.index-width {
+    max-width: 1175px;
+}
+
 .main-header {
     width: 100%;
     font-size: 16px;
     line-height: 20px;
-}
-
-.main-header ul {
-    list-style: none;
-}
-
-.main-header li {
-    float: left;
+    padding: inherit;
+    background-color: #000000;
 }
 
 .main-header_content {
@@ -46,25 +47,29 @@ address {
 }
 
 .main-header_content ul {
-    margin: 0 auto;
-    /* для сброса фантомных полей :( */
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    /* clear default padding*/
 }
 
-
-/* .main-header_page-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-} */
+.main-header_content li {
+    float: left;
+}
 
 .main-header a {
     /* text-decoration-line: none; */
     /* margin-left: 10px; */
     display: block;
     color: #ffffff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     outline: none;
+    min-height: 24px;
+}
+
+.main-header_selected-item {
+    border-bottom: 3px #ffffff solid;
 }
 
 .main-header a:hover,
@@ -72,6 +77,7 @@ align-items: center;
 .auth_btn-modal:hover,
 .auth_btn-modal:focus {
     background: #242424;
+    border: none;
 }
 
 .main-header_auth {
@@ -86,6 +92,7 @@ align-items: center;
     border: none;
     /* padding: 10px; */
     outline: none;
+    margin-left: auto;
 }
 
 .auth_btn:focus,
@@ -113,10 +120,10 @@ align-items: center;
 .main-content_features {
     display: flex;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 32px auto;
     /* color: #ffffff; */
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .features_list {
@@ -126,11 +133,14 @@ align-items: center;
 
 .features_item {
     text-align: center;
+    flex-basis: 33%;
+    padding: 20px;
+    line-height: 20px;
 }
 
 .features_item h3 {
     font-size: 30px;
-    line-height: 42px;
+    line-height: 32px;
 }
 
 .features_item h3::after {
@@ -139,8 +149,13 @@ align-items: center;
     width: 20px;
     height: 20px;
     background-color: #ffffff;
-    margin: 0 auto;
+    margin: 15px auto;
     transform: rotate(45deg);
+}
+
+.features_text {
+    margin: 0px;
+    /* откуда наследуются отступы? */
 }
 
 .main-content_index {
@@ -150,17 +165,49 @@ align-items: center;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 32px;
-    font-size: 16px;
-    /* background-color: #f8f5f2; */
+    /* font-size: 16px; */
     color: #000000;
 }
 
 .main-content_index h3 {
+    margin: 0px;
     font-size: 30px;
-    line-height: 42px;
+    line-height: 32px;
+}
+
+.content_news,
+.content_contacts {
+    flex-basis: 50%;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+}
+
+.content_gallery {
+    flex-basis: 50%;
+    padding: 50px;
+}
+
+.news_item {
+    margin-bottom: 20px;
+}
+
+.news_item p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.content_divider {
+    min-width: 15px;
+    align-items: stretch;
+    background-image: url("../img/gradient-index.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 .common_btn {
+    min-width: 145px;
     font-family: inherit;
     font-weight: 700;
     line-height: 24px;
@@ -182,9 +229,9 @@ align-items: center;
 
 .index_blog {
     display: flex;
-    /* justify-content: space-between; */
-    margin-bottom: 20px;
-    background-color: #ffffff;
+    justify-content: space-around;
+    margin-bottom: 32px;
+    background-color: #f5f3f1;
 }
 
 .item_date {
@@ -193,15 +240,25 @@ align-items: center;
 
 .index_contacts {
     display: flex;
-    background-color: #ffffff;
+    background-color: #f5f3f1;
+}
+
+.gallery_img {
+    width: 100%;
+    max-height: 200px;
+    border: 10px #ffffff solid;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+
+.gallery_action {
+    display: flex;
+    justify-content: space-between;
 }
 
 
 /*---------------*/
-
-.blog_gallery {
-    margin: 0 auto;
-}
 
 .main-container_contacts {
     display: flex;
@@ -216,12 +273,23 @@ align-items: center;
 .contacts_info {
     flex-basis: 50%;
     /*margin: 20px;*/
-    padding-left: 20px;
+    padding-top: 20px;
 }
 
-.contacts_booking {
+.contacts_info h3 {
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.info_worktime {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content_booking {
     flex-basis: 50%;
-    padding: 20px;
+    padding: 80px;
 }
 
 .booking_timestamp {
@@ -268,18 +336,8 @@ align-items: center;
     width: 100%;
 }
 
-.info_worktime {
-    margin: 2px;
-}
 
-
-/*----------- footer ---------------
-
-.main-content_pre-footer {
-display: block;
-height: 65px;
-}
-*/
+/*----------- footer ---------------*/
 
 .main-footer {
     width: 100%;
@@ -375,32 +433,55 @@ height: 65px;
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1;
+    margin: -1px;
     overflow: hidden;
 }
 
 
-/*============ price ============*/
+/*
+ *
+ *============ price ============
+ *
+ */
 
-.link_logo {
-    width: 111px;
-    height: 24px;
+.price-body {
+    background: url(../img/barbershop-price.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
-.price-cover {
-    width: 80%;
+.link_logo {
+    min-width: 111px;
+    min-height: 24px;
+}
+
+.price-width {
+    width: 75%;
 }
 
 .price-content {
-    background-color: #ffffff;
+    /* background-color: #f8f4f1; */
+    background-color: transparent;
     color: #000000;
+    padding-top: 50px;
     padding-left: 10%;
     padding-right: 10%;
 }
 
+.content-title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    max-width: 50%;
+}
+
 .price-content h3 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    max-width: 50%;
 }
 
 
@@ -408,6 +489,8 @@ height: 65px;
 
 .content_breadcrumbs {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .breadcrumbs_item,
@@ -432,19 +515,30 @@ height: 65px;
 
 /*---*/
 
-.grid_title::before,
+.grid_title::before {
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 160px;
+    border-top: 2px #000000 solid;
+    margin-right: 20px;
+}
+
 .grid_title::after {
     content: "";
     display: inline-block;
-    height: 10px;
-    width: 150px;
+    height: 15px;
+    width: 160px;
     border-top: 2px #000000 solid;
-    margin: 0 20px 0 20px;
+    margin-left: 20px;
 }
 
 .grid_title {
-    font-size: 42px;
-    line-height: 54px;
+    font-size: 49px;
+    line-height: 38px;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 .grid_promotion {
@@ -469,6 +563,7 @@ height: 65px;
 
 .grid_prices {
     width: 50%;
+    padding-left: 20px;
 }
 
 .prices_details {
@@ -492,6 +587,7 @@ height: 65px;
 .content_grid {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .about_columns {
@@ -500,4 +596,5 @@ height: 65px;
 
 .about_columns p {
     display: block;
+    padding-right: 100px;
 }
