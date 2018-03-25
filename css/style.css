@@ -43,6 +43,7 @@ address {
 
 .main-header_content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
 }
@@ -83,6 +84,8 @@ address {
 
 .main-header_auth {
     display: flex;
+    position: relative;
+    /* чтобы координаты иконки считать от него */
 }
 
 .auth_btn {
@@ -91,7 +94,7 @@ address {
     background: inherit;
     color: inherit;
     border: none;
-    /* padding: 10px; */
+    padding-left: 50px;
     outline: none;
     margin-left: auto;
 }
@@ -100,6 +103,18 @@ address {
 .auth_btn:hover {
     background: #242424;
     color: #ffffff;
+}
+
+.auth_btn::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: 30px;
+    background-image: url("../img/icon-login.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 
@@ -142,6 +157,7 @@ address {
 .features_item h3 {
     font-size: 30px;
     line-height: 32px;
+    margin: 0 auto;
 }
 
 .features_item h3::after {
@@ -178,7 +194,7 @@ address {
 .content_news,
 .content_contacts {
     flex-basis: 50%;
-    padding-top: 40px;
+    padding-top: 80px;
     padding-right: 5px;
     padding-bottom: 40px;
     padding-left: 80px;
@@ -198,14 +214,6 @@ address {
     margin-bottom: 0px;
 }
 
-.content_divider {
-    min-width: 15px;
-    align-items: stretch;
-    background-image: url("../img/gradient-index.png");
-    background-repeat: no-repeat;
-    background-position-y: center;
-}
-
 .common_btn {
     min-width: 145px;
     font-family: inherit;
@@ -214,11 +222,20 @@ address {
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
+    cursor: pointer;
     padding: 10px;
+    margin-right: 20px;
     border: none;
     /* outline: none; */
     background-color: #000000;
     color: #ffffff;
+}
+
+.common_btn.btn-disabled,
+.btn-disabled:hover {
+    cursor: default;
+    opacity: 0.5;
+    /* background-color: gray; */
 }
 
 .common_btn:hover,
@@ -232,6 +249,9 @@ address {
     justify-content: space-around;
     margin-bottom: 32px;
     background-color: #f5f3f1;
+    background-image: url("../img/gradient-index.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .item_date {
@@ -241,6 +261,9 @@ address {
 .index_contacts {
     display: flex;
     background-color: #f5f3f1;
+    background-image: url("../img/gradient-index.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .gallery_img {
@@ -272,7 +295,7 @@ address {
 .contacts_info {
     flex-basis: 50%;
     /*margin: 20px;*/
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .contacts_info h3 {
@@ -318,7 +341,9 @@ address {
 }
 
 .booking_input {
-    width: 90%;
+    width: 140px;
+    box-sizing: border-box;
+    /* 90%;*/
     border: 2px solid #000000;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -470,7 +495,7 @@ section h3 {
     line-height: 28px;
     margin-top: 0px;
     margin-bottom: 25px;
-    max-width: 50%;
+    /* max-width: 50%; */
 }
 
 .content_title {
