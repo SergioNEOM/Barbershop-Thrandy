@@ -416,13 +416,29 @@ address {
 
 /*--- modal form ----*/
 
-.modal_login {
-    background: #ffffff;
+.modal {
+    position: fixed;
+    background-color: #f8f4f1;
     color: #000000;
-    margin: 0;
+    top: 120px;
+    left: 50%;
 }
 
-.login-form input {
+.modal-login {
+    width: 300px;
+    padding: 40px;
+    margin-left: -150px;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-login h2 {
+    margin: 0px;
+}
+
+.login-form input:not([type="checkbox"]) {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
     font: inherit;
     text-transform: uppercase;
     border: 2px solid #000000;
@@ -433,9 +449,59 @@ address {
     border: 2px solid #663d15;
 }
 
+.login_flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.login-checkbox {
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+.login-checkbox input {
+    display: none;
+}
+
+.checkbox-indicator {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+}
+
 .login-checkbox:hover,
 .login-checkbox:focus {
     color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"]:focus+.checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+    position: absolute;
+    content: "";
+    font-size: 0px;
+    top: 8px;
+    left: 1px;
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+    transform: rotate(-45deg);
 }
 
 .restore {
@@ -449,11 +515,52 @@ address {
     text-decoration: none;
 }
 
+.modal-close {
+    position: absolute;
+    font-size: 0;
+    width: 24px;
+    height: 24px;
+    top: 0px;
+    right: -34px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 2px;
+    width: 20px;
+    height: 3px;
+    background-color: #d0d0d0;
+}
+
+.modal-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-map img {
+    width: 600px;
+    height: 500px;
+    margin-left: -300px;
+    border: 10px #ffffff solid;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.7);
+}
+
 
 /*-------- hidden elements ----------*/
 
 .visually-hidden {
     position: absolute;
+    top: 0px;
+    left: 0px;
     width: 1px;
     height: 1px;
     margin: -1px;
