@@ -470,6 +470,13 @@ address {
     border: 2px solid #000000;
 }
 
+.login-form input[name="login"] {
+    background-image: url("../img/enter-form-icons.png");
+    background-position: 270px 1px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
 .login-form input:hover,
 .login-form input:focus {
     border: 2px solid #663d15;
@@ -481,13 +488,16 @@ address {
     justify-content: space-between;
 }
 
-.login-checkbox {
+.login-checkbox,
+.filter_label,
+.group_label {
     position: relative;
     padding-left: 32px;
     cursor: pointer;
 }
 
-.checkbox-indicator {
+.checkbox-indicator,
+.checkmark {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -496,18 +506,36 @@ address {
     border: 2px solid #000000;
 }
 
+.radiomark {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
 .login-checkbox:hover,
-.login-checkbox:focus {
+.login-checkbox:focus,
+.filter_label:hover,
+.filter_label:focus,
+.group_label:hover,
+.group_label:focus {
     color: #663d15;
 }
 
-.login-checkbox input[type="checkbox"]:focus+.checkbox-indicator {
-    border-color: #663d15;
+.login-checkbox input[type="checkbox"]:focus+.checkbox-indicator,
+.filter_label input[type="checkbox"]:focus+.checkmark,
+.group_label input[type="radio"]:focus+.radiomark {
+    border-color: #000000;
     outline: thin dotted;
 }
 
 .login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after,
+.filter_label input[type="checkbox"]:checked+.checkmark::before,
+.filter_label input[type="checkbox"]:checked+.checkmark::after {
     position: absolute;
     content: "";
     font-size: 0px;
@@ -518,11 +546,26 @@ address {
     background-color: #000000;
 }
 
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before {
+.group_label input[type="radio"]:checked+.radiomark::before,
+.group_label input[type="radio"]:checked+.radiomark::after {
+    position: absolute;
+    content: "";
+    font-size: 0px;
+    top: 4px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before,
+.filter_label input[type="checkbox"]:checked+.checkmark::before {
     transform: rotate(45deg);
 }
 
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
+.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after,
+.filter_label input[type="checkbox"]:checked+.checkmark::after {
     transform: rotate(-45deg);
 }
 
