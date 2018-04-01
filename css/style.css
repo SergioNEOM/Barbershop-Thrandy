@@ -248,7 +248,6 @@ address {
     vertical-align: middle;
     cursor: pointer;
     padding: 10px;
-    margin-right: 20px;
     border: none;
     /* outline: none; */
     background-color: #000000;
@@ -326,6 +325,11 @@ address {
     font-size: 30px;
     line-height: 32px;
     margin-bottom: 20px;
+}
+
+.info_action {
+    display: flex;
+    justify-content: space-around;
 }
 
 .info_worktime {
@@ -692,7 +696,7 @@ section h3 {
 
 .content_title {
     font-size: 30px;
-    line-height: 30px;
+    line-height: 32px;
     margin-top: 0px;
     margin-bottom: 25px;
     max-width: 50%;
@@ -704,7 +708,7 @@ section h3 {
 .content_breadcrumbs {
     list-style: none;
     padding: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .breadcrumbs_item,
@@ -833,18 +837,24 @@ section h3 {
 }
 
 .content_filter {
-    width: 20%;
-    min-width: 300px;
+    width: 300px;
     /* float: left; */
 }
 
 .content_filter fieldset {
     border: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 40px;
 }
 
 .content_filter legend {
     font-size: 24px;
     line-height: 28px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .content_filter ul {
@@ -859,11 +869,64 @@ section h3 {
 }
 
 .list_grid-wrapper article {
-    display: block;
+    /* display: block; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .list-item_link span {
     display: block;
+}
+
+.goods-list {
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.item-cost {
+    /* display: block; */
+    background-color: lightgray;
+    padding: 14px;
+    min-width: 120px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+}
+
+.paginator {
+    display: flex;
+    margin-top: 30px;
+}
+
+.paginator ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.paginator li {
+    text-decoration: none;
+}
+
+.paginator_item {
+    padding: 15px;
+    margin: 0px;
+    margin-right: 5px;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    background: #000000;
+    color: #ffffff;
+}
+
+.current_page {
+    background: #ffffff;
+    color: #000000;
 }
