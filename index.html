@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/barb.js"></script>
 </head>
 
 <body class="index-body">
@@ -143,7 +144,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal modal-login ">
+    <div class="modal modal-login visually-hidden">
         <div class="overlay"></div>
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль.</p>
@@ -152,12 +153,12 @@
             <input type="password" name="password" placeholder="Пароль">
             <div class="login_flex-wrapper">
                 <label class="login-checkbox">
-                    <input type="checkbox" name="remember">Запомните меня
+                    <input class="visually-hidden" type="checkbox" name="remember">Запомните меня
                     <span class="checkbox-indicator"></span>
                 </label>
                 <a class="restore" href="#">Я забыл пароль!</a>
             </div>
-            <button type="submit">Войти</button>
+            <button class="common-btn login-submit" type="submit">Войти</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
     </div>
