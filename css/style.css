@@ -232,8 +232,8 @@ address {
 .content_news,
 .content_contacts {
     flex-basis: 50%;
-    padding-top: 80px;
-    padding-right: 5px;
+    padding-top: 50px;
+    padding-right: 25px;
     padding-bottom: 40px;
     padding-left: 80px;
 }
@@ -341,6 +341,11 @@ address {
     margin-bottom: 20px;
 }
 
+.info_phone {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .info_action {
     display: flex;
     justify-content: space-around;
@@ -387,9 +392,7 @@ address {
     box-sizing: border-box;
     /* 90%;*/
     border: 2px solid #000000;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* выравнен влево :( */
+    padding: 10px;
 }
 
 .booking_input:hover,
@@ -557,9 +560,9 @@ address {
     position: absolute;
     content: "";
     font-size: 0px;
-    top: 8px;
-    left: 1px;
-    width: 16px;
+    top: 6px;
+    left: 0px;
+    width: 14px;
     height: 2px;
     background-color: #000000;
 }
@@ -569,10 +572,10 @@ address {
     position: absolute;
     content: "";
     font-size: 0px;
-    top: 4px;
-    left: 4px;
-    width: 10px;
-    height: 10px;
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
     background-color: #000000;
     border-radius: 50%;
 }
@@ -893,6 +896,8 @@ section h3 {
 
 .list-item_link span {
     display: block;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .goods-list {
@@ -900,15 +905,24 @@ section h3 {
     padding-top: 25px;
 }
 
+.cost-wrapper {
+    display: flex;
+}
+
 .item-cost {
     /* display: block; */
+    display: inline-block;
     background-color: lightgray;
-    padding: 14px;
-    min-width: 120px;
+    padding: 10px;
+    min-width: 130px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
     border: none;
+}
+
+.buy_btn {
+    min-width: 80px;
 }
 
 .paginator {
