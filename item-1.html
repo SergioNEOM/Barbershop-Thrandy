@@ -12,74 +12,89 @@
 
 <body>
     <header class="main-header">
-        <div class="main-header_center">
-            <nav class="main-header_page-nav">
-                <a class="page-nav_link" href="index.html">
-                    <img class="link_logo" src="img/logo_min.png" alt="Малый логотип Барбершопа">
-                </a>
-                <a class="page-nav_link" href="info.html">Информация</a>
-                <a class="page-nav_link" href="#">Новости</a>
-                <a class="page-nav_link" href="price.html">Прайс-лист</a>
-                <a class="page-nav_link" href="#">Магазин</a>
-                <a class="page-nav_link" href="#">Контакты</a>
-            </nav>
-            <div class="main-header_auth">
-                <button class="auth_btn-modal">Вход</button>
-            </div>
-        </div>
-    </header>
-    <main class="thing-selection">
-        <h3 class="content_title">Набор для путешествий "Baxter of California"</h3>
-        <ul class="content_breadcrumbs">
-            <li class="breadcrumbs_item">Главная</li>
-            <li class="breadcrumbs_item">Магазин</li>
-            <li class="breadcrumbs_item">Средства для ухода</li>
-            <li class="breadcrumbs_item">Набор для путешествий "Baxter of California"</li>
-        </ul>
-        <section class="thing-view">
-            <img class="big-view" src="img/item-img-3b.jpg" alt="Крупный план - Набор для путешествий Baxter of California">
-            <img class="small-view" src="img/item-img-1.jpg" alt="Косметика - Набор для путешествий Baxter of California">
-            <img class="small-view" src="img/item-img-2.jpg" alt="Сумка-Косметичка - Набор для путешествий Baxter of California">
-            <img class="small-view" src="img/item-img-3.jpg" alt="Общий план - Набор для путешествий Baxter of California">
-        </section>
-        <section class="thing-detail">
-            <div class="thing-detail_state">
-                <span>Есть в наличии</span>
-                <span>Артикул: Dexter-AE</span>
-            </div>
-            <p class="thing-detail_promo">Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
-                крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-            <div class="thing-detail_to-cart">
-                <span>2&nbsp;900&#8381</span>
-                <button>Купить</button>
-            </div>
-            <legend class="thing-detail_content">В набор входят:</legend>
+        <nav class="main-header_content price-width">
             <ul>
-                <li class="content_item">средство для умывания (50мл)</li>
-                <li class="content_item">увлажняющий крем (50мл)</li>
-                <li class="content_item">крем для бритья (50мл)</li>
-                <li class="content_item">крем после бритья (50мл)</li>
-                <li class="content_item">шампунь (50мл)</li>
-                <li class="content_item">удобная кожаная Косметичка</li>
+                <li>
+                    <a class="page-nav_link" href="index.html">
+                        <img class="link_logo" src="img/logo_min.png" alt="Малый логотип Барбершопа">
+                    </a>
+                </li>
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="price.html">Прайс-лист</a></li>
+                <li><a class="main-header_selected-item" href="shop.html">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <div class="main-footer_address">
-            <span class="info_name">Барбершоп "Бородинский"</span>
-            <address class="info_address">Адрес: г.Санкт-Петербург, ул.Б.Конюшенная, д.19.8 </address>
-            <a class="info_question" href="#">Как нас найти?</a><br>
-            <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
-        </div>
-        <div class="main-footer_social">
-            <span>Давайте дружить!</span>
-            <div class="society_icons">
-
+            <div class="main-header_auth">
+                <button class="auth_btn">Вход</button>
+            </div>
+        </nav>
+    </header>
+    <main class="prod-content">
+        <div class="content_wrapper price-width">
+            <h3>Набор для путешествий "Baxter of California"</h3>
+            <ul class="content_breadcrumbs">
+                <li class="breadcrumbs_item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumbs_item"><img src="img/diamond-divider.png" alt="разделитель ссылок"></li>
+                <li class="breadcrumbs_item"><a href="shop.html">Магазин</a></li>
+                <li class="breadcrumbs_item"><img src="img/diamond-divider.png" alt="разделитель ссылок"></li>
+                <li class="breadcrumbs_item"><a>Средства для ухода</a></li>
+                <li class="breadcrumbs_item"><img src="img/diamond-divider.png" alt="разделитель ссылок"></li>
+                <li class="breadcrumbs_item-disabled">Набор для путешествий "Baxter of California"</li>
+            </ul>
+            <div class="two-columns-wrapper">
+                <section class="prod-view">
+                    <img class="item-view big-view" src="img/item-img-3b.jpg" alt="Крупный план - Набор для путешествий Baxter of California">
+                    <div class="items-wrapper">
+                        <img class="item-view" src="img/item-img-1.jpg" alt="Косметика - Набор для путешествий Baxter of California">
+                        <img class="item-view" src="img/item-img-2.jpg" alt="Сумка-Косметичка - Набор для путешествий Baxter of California">
+                        <img class="item-view" src="img/item-img-3.jpg" alt="Общий план - Набор для путешествий Baxter of California">
+                    </div>
+                </section>
+                <section class="prod-detail">
+                    <div class="prod-detail_state">
+                        <span>Есть в наличии</span>
+                        <span>Артикул: Dexter-AE</span>
+                    </div>
+                    <p class="prod-detail_promo">Travel kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для
+                        бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+                    <span class="item-cost">2&nbsp;900&#8381</span>
+                    <button class="common_btn buy_btn">Купить</button>
+                    <h3 class="prod-detail_content">В набор входят:</h3>
+                    <ul>
+                        <li class="content_item">средство для умывания (50мл)</li>
+                        <li class="content_item">увлажняющий крем (50мл)</li>
+                        <li class="content_item">крем для бритья (50мл)</li>
+                        <li class="content_item">крем после бритья (50мл)</li>
+                        <li class="content_item">шампунь (50мл)</li>
+                        <li class="content_item">удобная кожаная Косметичка</li>
+                    </ul>
+                </section>
             </div>
         </div>
-        <div class="main-footer_developers">
-            <span>Разработано</span>
-            <button>HTML Academy</button>
+    </main>
+    <footer class="main-footer index-width">
+        <div class="footer_wrapper index-width">
+            <div class="main-footer_address">
+                <span class="info_name">Барбершоп "Бородинский"</span>
+                <address class="info_address">Адрес: г.Санкт-Петербург, Б.Конюшенная, д.19/8 </address>
+                <a class="info_question" href="#">Как нас найти?</a><br>
+                <tel class="info_tel">Телефон: +7 (812) 123-45-67</tel>
+            </div>
+            <div class="main-footer_social">
+                <span>Давайте дружить!</span>
+                <div class="social_icons">
+                    <ul>
+                        <li><a class="icons-vk" href="#">ВКонтакте</a></li>
+                        <li><a class="icons-fb" href="#">Facebook</a></li>
+                        <li><a class="icons-ig" href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-footer_developer">
+                <span>Разработано</span>
+                <a href="#">Sergio NEOM</a>
+            </div>
         </div>
     </footer>
 </body>
