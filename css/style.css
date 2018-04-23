@@ -47,7 +47,7 @@
     .index-width {
         width: 940px;
     }
-   
+    
     .main-header {
         width: 100%;
         font-size: 16px;
@@ -70,7 +70,7 @@
         padding: 0px;
         margin: 0px;
     }
-
+    
     .main-header a {
         display: block;
         color: #ffffff;
@@ -232,7 +232,6 @@
         padding-left: 80px;
     }
     
-   
     .content_gallery {
         flex-basis: 50%;
         padding: 50px 76px 50px 90px;
@@ -241,8 +240,6 @@
     .news_item {
         margin-bottom: 20px;
     }
-
-
     
     .news_item p {
         margin-top: 20px;
@@ -252,6 +249,7 @@
     .news_item:last-of-type {
         margin-bottom: 30px;
     }
+    
     .common_btn {
         min-width: 140px;
         font-family: inherit;
@@ -307,6 +305,7 @@
     .gallery_title {
         margin-bottom: 5px;
     }
+    
     .gallery_img {
         width: 100%;
         max-height: 200px;
@@ -363,7 +362,7 @@
         flex-basis: 50%;
         padding-top: 50px;
         padding-bottom: 50px;
-        padding-left:90px;
+        padding-left: 90px;
         padding-right: 80px;
     }
     
@@ -447,7 +446,73 @@
     }
     
     .main-footer_social ul {
+        display: flex;
         list-style: none;
+        padding: 0px;
+    }
+    
+    .main-footer_social li {
+        margin-right: 5px;
+    }
+    
+    .icons-vk {
+        background-image: url("../img/social-icons.png");
+        background-position: 0px 0px;
+        background-size: 128px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        transition-duration: .3s;
+    }
+    
+    .icons-vk:hover {
+        background-image: url("../img/social-icons.png");
+        background-position: 0px -44px;
+        background-size: 128px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        transition-duration: .3s;
+    }
+    
+    .icons-fb {
+        background-image: url("../img/social-icons.png");
+        background-position: -44px 0px;
+        background-size: 128px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        transition-duration: .3s;
+    }
+    
+    .icons-fb:hover {
+        background-image: url("../img/social-icons.png");
+        background-position: -44px -44px;
+        background-size: 128px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        transition-duration: .3s;
+    }
+    
+    .icons-ig {
+        background-image: url("../img/social-icons.png");
+        background-position: -88px 0px;
+        background-size: 128px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        transition-duration: .3s;
+    }
+    
+    .icons-ig:hover {
+        background-image: url("../img/social-icons.png");
+        background-position: -88px -44px;
+        background-size: 128px;
+        background-repeat: no-repeat;
+        width: 42px;
+        height: 42px;
+        transition-duration: .3s;
     }
     
     .main-footer_developer {
@@ -455,7 +520,6 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    
     
     .main-footer_developer a {
         display: block;
